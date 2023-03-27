@@ -1,0 +1,23 @@
+.logo {
+	text-decoration: none;
+	margin-right: 96px;
+}
+.logo__primary-word {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: var(--logo-color);
+}
+.logo__secondary-word {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: 700;
+	font-size: 26px;
+	line-height: 1.19;
+	color: rgba(0, 0, 0, 1);
+}
+.logo--footer {
+	color: rgb(255, 255, 255);
+}

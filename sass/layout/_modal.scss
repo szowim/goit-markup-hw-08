@@ -1,0 +1,222 @@
+.backdrop {
+	display: flex;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.1);
+	transition: transform 0.25s;
+}
+.modal {
+	display: flex;
+	flex-direction: column;
+
+	width: 528px;
+	height: 581px;
+	background: #ffffff;
+	padding: 0px;
+	margin: auto;
+}
+.is-hidden {
+	transform: scale(0.1);
+	opacity: 0;
+	visibility: hidden;
+	pointer-events: none;
+}
+.close-modal {
+	margin-top: 1%;
+	margin-left: 93%;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border-color: #ffffff;
+	cursor: pointer;
+}
+.modal-form {
+	position: relative;
+	padding-left: 40px;
+	padding-right: 40px;
+}
+.form-name {
+	border: 1px solid #21212133;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	&:focus {
+		border-color: var(--logo-color);
+		transition: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+.modal-form-tel {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.modal-form-email {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.modal-form-komentarz {
+	display: flex;
+	justify-content: center;
+	padding-top: 30px;
+}
+.form-komentarz {
+	padding-left: 5px;
+	padding-top: -10px;
+	outline: 0;
+	display: flex;
+	background: none;
+	position: relative;
+	width: 448px;
+	height: 120px;
+	border-radius: 4px;
+	border: 1px solid #21212133;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+	&::placeholder {
+	color: #75757580;
+	position: absolute;
+	padding-top: 12px;
+	font-size: 12px;
+	line-height: 1.16;
+	letter-spacing: 0.01em;
+}
+&:focus {
+	border-color: var(--logo-color);
+	transition: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+}
+.modal-p {
+	font-weight: 700;
+	font-size: 20px;
+	line-height: 1.15;
+	text-align: center;
+	letter-spacing: 0.03em;
+	color: #212121;
+	align-items: center;
+}
+.modal-fieldset {
+	position: relative;
+	border: none;
+}
+.form-svg {
+	width: 15px;
+	height: 15px;
+	left: 15px;
+	top: 32px;
+	position: absolute;
+	fill: black;
+	.modal-fieldset:focus-within & {
+		fill: var(--logo-color);
+		transition: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+	}
+}
+.label {
+	top: 0;
+	color: #757575;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 1.17;
+	letter-spacing: 0.01em;
+	text-align: left;
+}
+.form-name {
+	padding-left: 30px;
+	outline: 0;
+	display: flex;
+	background: none;
+	position: relative;
+	width: 448px;
+	height: 40px;
+	border-radius: 4px;
+	border-color: rgba(33, 33, 33, 0.2);
+}
+.modal-checkbox {
+	position: relative;
+	margin-top: 16px;
+	border: none;
+	& input {
+		width: 16px;
+		height: 15px;
+		opacity: 0;
+		cursor: pointer;
+	}
+}
+.svg-check {
+	position: absolute;
+	left: 0;
+	top: 1px;
+	width: 16px;
+	height: 15px;
+	cursor: pointer;
+	opacity: 1;
+	.modal-checkbox input:checked ~ & {
+		opacity: 0;
+	}
+}
+.span-modal-checkbox {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+	color: #757575;
+}
+.svg-checked {
+	width: 16px;
+	height: 15px;
+	position: absolute;
+	left: 0;
+	top: 1px;
+	opacity: 0;
+	.modal-checkbox input:checked ~ & {
+		opacity: 1;
+	}
+}
+.Regulamin {
+	color: var(--logo-color);
+	margin: 0 5px 0 5px;
+}
+.Polityka {
+	color: var(--logo-color);
+	margin: 0 0 0 5px;
+}
+.button-modal {
+	display: flex;
+	padding-top: 30px;
+	justify-content: center;
+}
+.button-wyslij {
+	width: 200px;
+	height: 50px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	color: #ffffff;
+	background-color: var(--logo-color);
+	box-shadow: 0px 4px 4px 0px #00000026;
+	border-radius: 4px;
+	border: none;
+	cursor: pointer;
+}
+.button-index {
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.87;
+	color: #ffffff;
+	background-color: var(--logo-color);
+	border-radius: 4px;
+	border: none;
+	padding: 10px 41px 10px 42px;
+	cursor: pointer;
+}
+.button-zamow {
+	display: flex;
+	padding-top: 30px;
+	justify-content: center;
+}
