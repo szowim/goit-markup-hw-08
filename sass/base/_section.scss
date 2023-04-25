@@ -1,4 +1,18 @@
 .section {
-	max-width: 1600px;
-	margin: 0 auto;
+	max-width: 480px;
+	margin: 60px auto;
 }
+@media screen and (min-width: 768px) {
+	.section {max-width: 768px;
+	margin: 80px auto;
+	}
+}
+
+@media screen and (min-width: 1200px) {
+	.section {max-width: 1200px;
+	margin: 60px auto;}
+}
+// .section {
+// 	max-width: 1600px;
+// 	margin: 0 auto;
+// }
