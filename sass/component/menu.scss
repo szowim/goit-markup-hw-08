@@ -1,4 +1,9 @@
 .menu {
+	visibility: hidden;
+}
+@media screen and (min-width: 768px) {
+	.menu {
+	visibility: visible;
 	position: relative;
 	display: flex;
 	list-style: none;
@@ -7,6 +12,9 @@
 	line-height: 1.71;
 	gap: 46px;
 	justify-content: space-between;
+	}}
+.contact__menu {
+	padding-bottom: 10px;
 }
 .menu--active {
 	text-decoration: none;
@@ -41,5 +49,9 @@
 		color: var(--logo-color);
 	}
 }
-
+@media screen and (min-width: 1200px) {
+	.contact__menu {
+		padding-bottom: 0;
+	}
+	}
 

@@ -1,7 +1,13 @@
 .logo {
 	text-decoration: none;
-	margin-right: 96px;
+	margin-right: 0px;
 }
+@media screen and (min-width: 768px) {
+	.logo {
+		margin-right: 83px;
+	}
+}
+
 .logo__primary-word {
 	font-family: 'Raleway';
 	font-style: normal;
