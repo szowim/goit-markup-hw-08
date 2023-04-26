@@ -1,0 +1,17 @@
+.team-area__photo {
+    width: 450px;
+    height: 460px;
+}
+
+@media screen and (min-width: 768px) {
+    .team-area__photo {
+        width: 354px;
+        height: 374px;
+    }
+}
+@media screen and (min-width: 1200px) {
+.team-area__photo {
+    width: 270px;
+    height: 260px;
+}
+}
